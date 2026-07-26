@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toque Clásico | Alquiler de Coches Clásicos para Bodas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#f8f6f3;
+color:#2f2f2f;
+line-height:1.7;
+}
+
+h1,h2,h3{
+font-family:'Cormorant Garamond',serif;
+font-weight:700;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(12px);
+box-shadow:0 4px 20px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+letter-spacing:2px;
+color:#8b6a45;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+margin-left:30px;
+font-size:14px;
+text-transform:uppercase;
+transition:.3s;
+}
+
+nav a:hover{
+color:#8b6a45;
+}
+
+.hero{
+height:100vh;
+background:url("https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1800&q=80") center center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+text-align:center;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+color:white;
+max-width:850px;
+padding:20px;
+}
+
+.hero h1{
+font-size:72px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:40px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#8b6a45;
+color:white;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#705235;
+transform:translateY(-3px);
+}
+
+section{
+padding:100px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.title h2{
+font-size:54px;
+}
+
+.title p{
+margin-top:10px;
+color:#777;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about h3{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card-content h3{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.service{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.service h3{
+margin-bottom:15px;
+}
+
+.contact{
+background:#222;
+color:white;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+footer{
+background:#111;
+color:#aaa;
+padding:30px;
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Toque Clásico
+</div>
+
+<nav>
+
+<a href="#inicio">Inicio</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#flota">Flota</a>
+<a href="#servicios">Servicios</a>
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+<h1>La elegancia de otra época para el día más importante de vuestra vida</h1>
+
+<p>
+En Toque Clásico ponemos a vuestra disposición una exclusiva colección de automóviles históricos cuidadosamente restaurados para convertir vuestra boda en un recuerdo inolvidable.
+</p>
+
+<a href="#contacto" class="btn">Solicitar presupuesto</a>
+
+</div>
+
+</section>
+
+<section id="nosotros">
+
+<div class="title">
+
+<h2>Sobre Toque Clásico</h2>
+
+<p>Pasión por la historia, la elegancia y los coches con alma.</p>
+
+</div>
+
+<div class="about">
+
+<img src="./Foto1.jpeg">
+
+<div>
+
+<h3>Tradición, exclusividad y atención personalizada</h3>
+
+<p>
+
+Cada uno de nuestros vehículos ha sido restaurado respetando su esencia original y se presenta impecable para acompañaros en uno de los días más importantes de vuestra vida.
+
+</p>
+
+<br>
+
+<p>
+
+Nuestro servicio incluye chófer profesional, máxima puntualidad y una atención completamente personalizada para que todo salga perfecto.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="flota">
+
+<div class="title">
+
+<h2>Nuestra flota</h2>
+
+<p>Cuatro joyas del automovilismo clásico.</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+
+<h3>Rolls-Royce Silver Cloud II</h3>
+
+<p>
+Símbolo de lujo británico de los años 60. Un automóvil elegante, refinado y perfecto para bodas de estilo clásico.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+
+<h3>Rolls-Royce Silver Wraith</h3>
+
+<p>
+Una auténtica obra de arte sobre ruedas. Exclusividad, presencia y distinción para ceremonias inolvidables.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+
+<h3>Rolls-Royce 25/30</h3>
+
+<p>
+Un modelo legendario de preguerra que representa la máxima elegancia y el encanto de los grandes clásicos ingleses.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=900&q=80">
+
+<div class="card-content">
+
+<h3>Citroën Traction Avant 11</h3>
+
+<p>
+Conocido popularmente como Citroën 11, es uno de los iconos del automóvil europeo y un vehículo lleno de personalidad.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="servicios">
+
+<div class="title">
+
+<h2>Nuestros servicios</h2>
+
+</div>
+
+<div class="services">
+
+<div class="service">
+
+<h3>Chófer Profesional</h3>
+
+<p>
+Conductores uniformados con amplia experiencia en eventos y protocolo.
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>Decoración Floral</h3>
+
+<p>
+Decoración personalizada acorde con el estilo de vuestra boda.
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>Sesión Fotográfica</h3>
+
+<p>
+Tiempo reservado para fotografías con el vehículo en los lugares elegidos.
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>Servicio Exclusivo</h3>
+
+<p>
+Un único evento por vehículo y día para garantizar la máxima calidad.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contacto">
+
+<h2>Contacto</h2>
+
+<p>📞 +34 600 123 456</p>
+
+<p>✉ contacto@toqueclasico.es</p>
+
+<p>📍 Madrid · Servicio en toda España</p>
+
+<br>
+
+<a href="#" class="btn">Solicitar presupuesto</a>
+
+</section>
+
+<footer>
+
+© 2026 <strong>Toque Clásico</strong> · Alquiler de vehículos clásicos para bodas.
+
+</footer>
+
+</body>
+</html>
